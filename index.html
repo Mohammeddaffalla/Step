@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>مبادرة خطوة - Step Inititive</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top shadow-sm py-2" dir="rtl">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+       <a href="index.html" class="navbar-brand d-flex align-items-center m-0 order-1">
+    <img src="img/logo.png" alt="شعار خطوة" class="rounded-circle" style="width: 70px; height: 40px; object-fit: cover;">
+    
+    <div class="d-flex flex-column text-end ms-2 d-none d-sm-inline-flex">
+        <span class="fw-bold text-dark fs-5 lh-1 mb-1">خطوة</span>
+        <span class="text-muted small lh-1" style="font-size: 11px; font-family: sans-serif;">Step Initiative</span>
+    </div>
+</a>
+<button class="navbar-toggler border-0 p-1 order-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars-staggered" style="color: #144245; font-size: 28px;"></i>
+</button>
+
+        <div class="collapse navbar-collapse text-center order-2" id="mainmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0 p-0 header-links">
+                <li class="nav-item"><a href="index.html" class="nav-link px-3 active">الرئيسية</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-3">من نحن</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-3">برامجنا</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        إنضم إلينا
+                    </a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sgin.html"><i class="bi bi-mortarboard-fill ms-2"></i>إنضم كمتدرب</a></li>
+                        <li><a class="dropdown-item" href="join.html"><i class="bi bi-heart-pulse-fill ms-2"></i>إنضم كمتطوع</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="nav-buttons-container d-flex flex-column flex-md-row gap-2 justify-content-center pt-2 pt-md-0">
+                <a href="login.html" class="btn btn-main-action px-4 py-2 text-white">تسجيل دخول</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<section id="hero" class="hero-section text-white d-flex align-items-center position-relative overflow-hidden">
+    <!-- تأثير ضوئي خلفي ناعم يعطي طابعاً مودرن -->
+    <div class="hero-glow-effect position-absolute"></div>
+    
+    <div class="container">
+        <div class="row align-items-center g-5 text-center text-lg-end">
+            
+            <!-- العمود الأول: النصوص والأزرار -->
+            <div class="col-lg-6 order-2 order-lg-1">
+                <!-- الوسم الترحيبي -->
+                <span class="badge bg-white text-dark-green px-3 py-2 rounded-pill fw-bold fs-6 mb-4 shadow-sm">
+                    منصة تعليمية شبابية سودانية
+                </span>
+                
+                <!-- العنوان الرئيسي (حجم ديناميكي يصغر على الجوال تلقائياً) -->
+                <h1 class="hero-title fw-bold mb-3 lh-base">
+                    ابدأ خطوتك <br class="d-none d-lg-block"> نحو النجاح
+                </h1>
+                
+                <!-- العنوان الفرعي -->
+                <h3 class="hero-subtitle fw-semibold mb-3">
+                    مع خطوة تستطيع البدء من الصفر وبناء نفسك خطوة بخطوة
+                </h3>
+                
+                <!-- الوصف -->
+                <p class="hero-description text-white-50 mb-4">
+                    خطوة هي منصة تعليمية شبابية سودانية تُعنى بتمكين وتأهيل الشباب لسوق العمل من خلال التدريب، والتوجيه، وفرص التطوير المهني الشاملة والمجانية.
+                </p>
+                
+                <!-- أزرار اتخاذ الإجراء (تترتب عمودياً على الجوال وأفقياً على الكمبيوتر) -->
+                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                    <a href="#join-us" class="btn btn-cta-primary px-5 py-3 fw-bold">انضم إلينا </a>
+                    <a href="#about-section" class="btn btn-cta-secondary px-5 py-3 fw-bold">اعرف أكثر عنّا</a>
+                </div>
+            </div>
+            
+            <!-- العمود الثاني: الصورة الجمالية للمبادرة -->
+           <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <div class="hero-image-wrapper position-relative d-inline-block">
+                    <img src="img/step.jpg" alt="مبادرة خطوة" class="img-fluid rounded-4 shadow-lg hero-img"> 
+                    <!-- الإطار الخلفي للصورة -->
+                     <div class="hero-img-backdrop position-absolute rounded-4"></div>
+                </div> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- قسم من نحن وركائزنا الأساسية المطور -->
+<section id="about-section" class="py-5  overflow-hidden bg-white">
+    <div class="container py-3">
+        
+        <!-- أولاً: الجزء المختصر لـ "من نحن" -->
+        <div class="row align-items-center g-4 mb-5 text-center text-lg-end" dir="rtl">
+            <div class="col-lg-7">
+                <span class="badge bg-green-subtle text-success-green px-3 py-2 rounded-pill fw-bold fs-6 mb-3">من نحن</span>
+                <h2 class="display-6 fw-bold text-dark-green mb-3">قصتنا في خطوة</h2>
+                <p class="lead text-muted lh-lg fs-6 mb-4">
+                    نحن منصة تعليمية شبابية سودانية مستقلة، نؤمن بأن المعرفة والتأهيل هما الأساس لبناء مستقبل واعد. انطلقت "خُطوة" بروح شبابية متطوعة لتسد الفجوة بين التعليم الأكاديمي ومتطلبات سوق العمل الحقيقية، من خلال تقديم برامج تدريبية تخصصية متاحة للجميع.
+                </p>
+                <!-- زر ينقل إلى صفحة من نحن الكاملة -->
+                <a href="about.html" class="btn btn-read-more px-4 py-2 fw-semibold rounded-pill">
+                    اقرأ قصتنا كاملة وتعرف علينا  <i class="bi bi-arrow-left ms-1"></i>
+                </a>
+            </div>
+            <!-- تصميم جمالي جانبي يدعم الواجهة على الشاشات الكبيرة -->
+            <div class="col-lg-5 d-none d-lg-block text-center">
+                <div class="about-accent-box p-5 rounded-4 position-relative">
+                    <i class="bi bi-rocket-takeoff display-1 text-dark-green opacity-25"></i>
+                    <h4 class="fw-bold text-dark-green mt-3">ابدأ خطوتك اليوم</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- فاصل ناعم بين النص والركائز -->
+        <hr class="my-5 opacity-25">
+
+        <!-- ثانياً: قسم ركائزنا الأساسية المحدث بألوانه وأيقوناته الثابتة -->
+        <!-- قسم ركائزنا الأساسية - أيقونات بارزة باللون الأخضر الداكن والأبيض -->
+        <div class="row g-4 mt-2" dir="rtl">
+            <div class="col-12 text-center mb-3">
+                <h3 class="fw-bold text-dark-green">ركائزنا الأساسية</h3>
+                <p class="text-muted">القيم التي تدفعنا للأمام</p>
+            </div>
+            
+            <!-- كرت الميزة الأولى: مجانية -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 bg-white shadow-sm h-100 text-center text-md-end position-relative overflow-hidden">
+                    <div class="icon-box bg-dark-green d-inline-flex p-3 mb-3 text-white">
+                        <i class="bi bi-currency-dollar fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3 text-dark-green fs-5">مجانية 100%</h4>
+                    <p class="text-muted mb-0 fs-6">كل ما نقدمه من كورسات وورش عمل وبرامج تعليمية متاح بالكامل مجاناً لدعم الشباب    .</p>
+                </div>
+            </div>
+
+            <!-- كرت الميزة الثانية: سوق العمل -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 bg-white shadow-sm h-100 text-center text-md-end position-relative overflow-hidden">
+                    <div class="icon-box bg-dark-green d-inline-flex p-3 mb-3 text-white">
+                        <i class="bi bi-shield-check fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3 text-dark-green fs-5">تأهيل لسوق العمل</h4>
+                    <p class="text-muted mb-0 fs-6">لا نقدم نظريات فقط؛ نركز في برامجنا على المهارات العملية والأدوات الحقيقية التي يطلبها أصحاب العمل اليوم.</p>
+                </div>
+            </div>
+
+            <!-- كرت الميزة الثالثة: بيئة شبابية -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 bg-white shadow-sm h-100 text-center text-md-end position-relative overflow-hidden">
+                    <div class="icon-box bg-dark-green d-inline-flex p-3 mb-3 text-white">
+                        <i class="bi bi-lightning-charge fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3 text-dark-green fs-5">بيئة شبابية تطوعية</h4>
+                    <p class="text-muted mb-0 fs-6">نحن نفتح أبواب التطوع لكل شغوف ومبدع؛ حيث يمكنك تقديم المحتوى، التدريب، أو المساهمة في إدارة مكاتب المبادرة.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-vision-section py-5">
+    <div class="container">
+        
+        <div class="text-center mb-5 text-white">
+            <span class="badge bg-light text-dark mb-2">رؤيتنا</span>
+            <h2 class="fw-bold">ما نؤمن به في خطوة</h2>
+            <p class="text-white-50">المبادئ والقيم التي تقود مسيرتنا وتصنع شغفنا اليومي لخدمة الشباب</p>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card vision-card h-100">
+                    <div class="card-body text-end">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-lightbulb-fill"></i> </div>
+                        <h5 class="card-title fw-bold text-white mb-3">الإيمان بالقدرات الشبابية</h5>
+                        <p class="card-text text-white-50 fs-6">نؤمن أن الشباب يمتلكون طاقات إبداعية كامنة، وتحتاج فقط إلى التوجيه الصحيح والفرصة المناسبة لتنطلق وتصنع الفارق.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card vision-card h-100">
+                    <div class="card-body text-end">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-book-fill"></i> </div>
+                        <h5 class="card-title fw-bold text-white mb-3">التعليم المعرفي المستدام</h5>
+                        <p class="card-text text-white-50 fs-6">نؤمن أن المعرفة ليست مجرد شهادات، بل هي مهارات عملية واكتساب حقيقي يُمكّن الفرد من بناء مستقبله ومجتمعه بشكل مستدام.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card vision-card h-100">
+                    <div class="card-body text-end">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-heart-fill"></i> </div>
+                        <h5 class="card-title fw-bold text-white mb-3">الأثر المجتمعي الصادق</h5>
+                        <p class="card-text text-white-50 fs-6">نؤمن بأن زكاة العلم نشره، وأن نجاح المبادرة الحقيقي يُقاس بحجم الأثر الإيجابي والتغيير الفعلي في حياة كل طالب يخطو معنا.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="services" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container py-4">
+        
+        <div class="col-12 text-center mb-5" dir="rtl">
+            <span class="badge bg-green-subtle text-success-green px-3 py-2 rounded-pill fw-bold fs-6 mb-3">البرامج والمسارات</span>
+            <h2 class="fw-bold text-dark-green mb-2">اكتشف مساراتنا التعليمية</h2>
+            <p class="text-muted">دورات ومخيمات تخصصية مجانية لتمكين وتأهيل الشباب لسوق العمل</p>
+        </div>
+
+        <div class="row g-4" dir="rtl">
+            
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">أساسي</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-display fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">برامج الحاسوب</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Computer Skills</span>
+                        <p class="text-muted fs-6 lh-base mb-4">أتقن برامج ماركروسوفت والأدوات الأساسية لسوق العمل. كورسات شاملة في Word و Excel و PowerPoint والأدوات الإلكترونية الأساسية التي يحتاجها كل موظف.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">دخل مستقل</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-laptop fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">العمل الحر</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Freelancing</span>
+                        <p class="text-muted fs-6 lh-base mb-4">ابدأ عملك عبر الإنترنت وابنِ دخلك المستقل. العمل الحر لا يتطلب رأس مال — يتطلب مهارة وإرادة، سنساعدك على البداية وإيجاد أول عميل لك.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">للمبدعين</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-feather fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">كتابة المحتوى</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Content Writing</span>
+                        <p class="text-muted fs-6 lh-base mb-4">حوّل موهبتك في الكتابة إلى مصدر دخل وفرصة حقيقية. إن كانت لديك موهبة الكتابة والإبداع، ستساعدك خطوة على تحويلها إلى مشروع حقيقي وبناء هويتك المهنية.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">مطلوب جداً</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-graph-up-arrow fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">التسويق الرقمي</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Digital Marketing</span>
+                        <p class="text-muted fs-6 lh-base mb-4">تعلّم كيف تُسوّق لنفسك وللآخرين وتدخل سوق العمل. ستتعلم أسرار التسويق الرقمي، وبناء حضورك على منصات التواصل الاجتماعي، وتجد عملاً فعلياً في السوق.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">تقني</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-code-slash fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">لغات البرمجة</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Programming</span>
+                        <p class="text-muted fs-6 lh-base mb-4">ادخل عالم البرمجة وابنِ مهاراتك التقنية من الصفر. ستتعلم أساسيات البرمجة بلغات حديثة مطلوبة في سوق العمل، بأسلوب مبسط يناسب المبتدئين.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">نمو شخصي</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-star fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">تطوير الذات</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Self Development</span>
+                        <p class="text-muted fs-6 lh-base mb-4">ابنِ شخصيتك وطوّر مهاراتك وثقتك بنفسك. النجاح يبدأ من الداخل — ستتعلم كيف تبني ثقتك بنفسك، وتنظم وقتك، وتتحدث بثقة أمام الآخرين.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">أساس النجاح</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-lightning-charge fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">المهارات الشخصية</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Soft Skills</span>
+                        <p class="text-muted fs-6 lh-base mb-4">طوّر مهاراتك في التواصل والقيادة وإدارة الوقت. النجاح يحتاج أكثر من المعرفة التقنية — ستتعلم كيف تتواصل بفاعلية وتقود وتنظم حياتك المهنية.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="replit-course-card p-4 text-center d-flex flex-column justify-content-between h-100 position-relative border-special-girls">
+                    <span class="badge-original mb-3 d-inline-block mx-auto">للبنات</span>
+                    <div class="card-icon-main my-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-people fs-3"></i>
+                    </div>
+                    <div class="card-text-info">
+                        <h4 class="fw-bold text-dark mb-1 fs-5">معسكر العوين</h4>
+                        <span class="text-uppercase text-muted d-block small mb-3 fw-semibold" style="letter-spacing: 1px; font-size: 11px;">Al-Uwayn Camp</span>
+                        <p class="text-muted fs-6 lh-base mb-4">معسكر مخصص للبنات لتطوير الذات وبناء المجتمع. برنامج متكامل للبنات يجمع بين تطوير الذات وتحسين الروتين اليومي وخلق مجتمع داعم ومحفز.</p>
+                    </div>
+                    <a href="join-student.html" class="btn btn-course-submit w-100 py-2.5 fw-bold rounded-pill text-decoration-none d-block">سجل الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container-fluid px-md-5 py-4">
+        
+        <div class="col-12 text-center mb-5" dir="rtl">
+            <h2 class="fw-bold text-dark-green mb-2">أرقام نفخر بها</h2>
+            <p class="text-muted">حصيلة العطاء والعمل المستمر لتمكين الشباب وبناء مهاراتهم</p>
+        </div>
+
+        <div class="row g-3 justify-content-center align-items-stretch row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5" dir="rtl">
+            
+            <div class="col">
+                <div class="achievement-card p-4 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div class="ach-icon-wrapper mb-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-mic-fill fs-3"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold text-dark-green mb-1 fs-1">
+                            <span>+</span><span class="counter-value" data-target="150">0</span>
+                        </h3>
+                        <h4 class="fw-bold text-dark mb-2 fs-6">ورشة تدريبية</h4>
+                        <p class="text-muted small lh-base mb-0">ورش عملية تطبيقية في مختلف المجالات</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="achievement-card p-4 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div class="ach-icon-wrapper mb-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-book-half fs-3"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold text-dark-green mb-1 fs-1">
+                            <span>+</span><span class="counter-value" data-target="50">0</span>
+                        </h3>
+                        <h4 class="fw-bold text-dark mb-2 fs-6">كورس متخصص</h4>
+                        <p class="text-muted small lh-base mb-0">برامج تدريبية متكاملة ومدروسة</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="achievement-card p-4 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div class="ach-icon-wrapper mb-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-people-fill fs-3"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold text-dark-green mb-1 fs-1">
+                            <span>+</span><span class="counter-value" data-target="8000" data-is-k="true">0</span>
+                        </h3>
+                        <h4 class="fw-bold text-dark mb-2 fs-6">متدرب ومتدربة</h4>
+                        <p class="text-muted small lh-base mb-0">شباب وشابات نالوا التدريب والتأهيل</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="achievement-card p-4 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div class="ach-icon-wrapper mb-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-award-fill fs-3"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold text-dark-green mb-1 fs-1">
+                            <span>+</span><span class="counter-value" data-target="300">0</span>
+                        </h3>
+                        <h4 class="fw-bold text-dark mb-2 fs-6">عضو في الفريق</h4>
+                        <p class="text-muted small lh-base mb-0">متطوعون يعملون لخدمة المجتمع</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="achievement-card p-4 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div class="ach-icon-wrapper mb-3 mx-auto d-flex align-items-center justify-content-center">
+                        <i class="bi bi-globe fs-3"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold text-dark-green mb-1 fs-1">
+                            <span>+</span><span class="counter-value" data-target="2" data-is-m="true">0</span>
+                        </h3>
+                        <h4 class="fw-bold text-dark mb-2 fs-6">وصول على منصات التواصل</h4>
+                        <p class="text-muted small lh-base mb-0">انتشار واسع على وسائل التواصل الاجتماعي</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="py-5" style="background-color: #ffffff;">
+    <div class="container py-4">
+        
+        <div class="col-12 text-center mb-5" dir="rtl">
+            <span class="badge tag-identity-color px-3 py-2 rounded-pill fw-bold fs-6 mb-3">تجارب ملهمة</span>
+            <h2 class="fw-bold text-dark-green mb-2">ماذا يقولون عن خطوة?</h2>
+            <p class="text-muted">قصص نجاح وآراء نعتز بها من متدربينا ومتطوعينا الأوفياء</p>
+        </div>
+
+        <div id="testimonialsCarousel" class="carousel slide testimonial-carousel d-none d-md-block" data-bs-ride="carousel" dir="rtl">
+            <div class="carousel-indicators mb-n4">
+                <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner p-2">
+                <div class="carousel-item active">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                        <p class="testimonial-opinion mb-4">"المخيم غير نظرتي    للتكنولوجيا، التطبيق العملي والمتابعة المستمرة ساعدتني في فهم الأسس وبناء أول تطبيق لي من الصفر."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6">أحمد مصطفى</h5>
+                                    <span class="text-muted small"> البرمجة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                                    <p class="testimonial-opinion mb-4">"فخور جداً بتجربتي في تنظيم وإدارة الورش التدريبية بمكتب العلاقات العامة. بيئة العمل محفزة وتكسب مهارات قيادية استثنائية."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6">سارة الأمين</h5>
+                                    <span class="text-muted small">مكتب العلاقات العامة </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-flex">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                                    <p class="testimonial-opinion mb-4">"كورس كتابة المحتوى ساعدني في تحويل شغفي بالتدوين إلى مهارة احترافية، وتعلّمت من خلاله أسرار صناعة النصوص الإبداعية المناسبة لسوق العمل."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6">محمد عثمان</h5>
+                                    <span class="text-muted small">كتابة المحتوى</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                                    <p class="testimonial-opinion mb-4">"التطوع في مكتب التسويق صقل مهاراتي في إدارة الحملات وتحليل السوق، والعمل مع هذا الفريق الشغوف يمنحك خبرة عملية استثنائية."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6"> خالد عمر</h5>
+                                    <span class="text-muted small">التسويق الرقمي</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                                    <p class="testimonial-opinion mb-4">"كورس التسويق الرقمي وإدارة الحملات فتح لي أبواباً للعمل الحر فور انتهائي منه. الورش التطبيقية كانت سر تميز الكورس."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6">فاطمة علي</h5>
+                                    <span class="text-muted small">التسويق الرقمي</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-flex">
+                            <div class="testimonial-card p-4 bg-white d-flex flex-column justify-content-between h-100">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                                        <i class="bi bi-quote fs-1 quote-icon"></i>
+                                    </div>
+                                    <p class="testimonial-opinion mb-4">"العمل الجماعي وروح العائلة داخل مبادرة خطوة تمنحك طاقة لا تنضب للعطاء المستمر وبناء شبكة علاقات ممتازة."</p>
+                                </div>
+                                <div class="testimonial-author-info pt-3 border-top">
+                                    <h5 class="fw-bold text-dark mb-1 fs-6">إبراهيم حسن</h5>
+                                    <span class="text-muted small">مكتب صناعة المحتوى </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="testimonialsMobileCarousel" class="carousel slide testimonial-carousel d-block d-md-none" data-bs-ride="carousel" dir="rtl">
+            <div class="carousel-indicators mb-n4">
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#testimonialsMobileCarousel" data-bs-slide-to="5"></button>
+            </div>
+
+            <div class="carousel-inner p-2">
+                <div class="carousel-item active">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"المخيم غير نظرتي    للتكنولوجيا، التطبيق العملي والمتابعة المستمرة ساعدتني في فهم الأسس وبناء أول تطبيق لي من الصفر."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6">أحمد مصطفى</h5>
+                            <span class="text-muted small"> البرمجة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"فخور جداً بتجربتي في تنظيم وإدارة الورش التدريبية بمكتب العلاقات العامة. بيئة العمل محفزة وتكسب مهارات قيادية استثنائية."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6">سارة الأمين</h5>
+                            <span class="text-muted small">مكتب العلاقات العامة </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"كورس كتابة المحتوى ساعدني في تحويل شغفي بالتدوين إلى مهارة احترافية، وتعلّمت من خلاله أسرار صناعة النصوص الإبداعية المناسبة لسوق العمل."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6">محمد عثمان</h5>
+                            <span class="text-muted small">كتابة المحتوى</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"التطوع في مكتب التسويق صقل مهاراتي في إدارة الحملات وتحليل السوق، والعمل مع هذا الفريق الشغوف يمنحك خبرة عملية استثنائية."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6"> خالد عمر</h5>
+                            <span class="text-muted small">التسويق الرقمي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-trainee rounded-pill px-3 py-1">متدرب</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"كورس التسويق الرقمي وإدارة الحملات فتح لي أبواباً للعمل الحر فور انتهائي منه. الورش التطبيقية كانت سر تميز الكورس."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6">فاطمة علي</h5>
+                            <span class="text-muted small">التسويق الرقمي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge badge-volunteer rounded-pill px-3 py-1">متطوع</span>
+                            <i class="bi bi-quote fs-1 quote-icon"></i>
+                        </div>
+                        <p class="testimonial-opinion mb-4">"العمل الجماعي وروح العائلة داخل مبادرة خطوة تمنحك طاقة لا تنضب للعطاء المستمر وبناء شبكة علاقات ممتازة."</p>
+                        <div class="testimonial-author-info pt-3 border-top">
+                            <h5 class="fw-bold text-dark mb-1 fs-6">إبراهيم حسن</h5>
+                            <span class="text-muted small">مكتب صناعة المحتوى </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5" dir="rtl">
+            <button type="button" class="btn px-5 py-3 fw-bold rounded-pill shadow-sm" 
+                    style="background-color: #0d2b2e; color: #ffffff; transition: all 0.3s ease; border: 1px solid #0d2b2e;"
+                    data-bs-toggle="modal" data-bs-target="#feedbackModal"
+                    onmouseover="this.style.backgroundColor='transparent'; this.style.color='#0d2b2e';"
+                    onmouseout="this.style.backgroundColor='#0d2b2e'; this.style.color='#ffffff';">
+                <i class="bi bi-chat-heart-fill ms-2"></i> شاركنا رأيك وتجربتك
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-join-section py-5 position-relative text-center text-white" dir="rtl">
+    <div class="cta-circle-decor top-left"></div>
+    <div class="cta-circle-decor bottom-right"></div>
+    
+    <div class="container py-5 position-relative" style="z-index: 2;">
+        
+        <div class="mb-4">
+            <span class="badge cta-status-badge px-3 py-2 rounded-pill fw-normal">
+                <span class="badge-dot ms-1"></span> الفرصة أمامك الآن
+            </span>
+        </div>
+
+        <h2 class="fw-bold cta-main-title mb-4 lh-sm">
+            هل أنت مستعد للبداية؟<br>خطوتك تنتظرك
+        </h2>
+
+        <div class="cta-description-wrapper mx-auto mb-5">
+            <p class="fs-5 fw-normal text-white-85 mb-3">انضم إلى مجتمع خطوة وابدأ مسيرتك التعليمية اليوم</p>
+            <p class="fs-6 fw-light text-white-70 mb-0">
+                لا يوجد وقت أفضل من الآن — الفرصة أمامك والطريق واضح<br>
+                كل ما يفرق بين النجاح والتأخر هو قرارك بالبداية
+            </p>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center">
+            <a href="#join-us" class="btn btn-cta-primary px-5 py-3 fw-bold rounded-pill text-decoration-none">انضم الآن</a>
+            <a href="courses.html" class="btn btn-cta-outline px-5 py-3 fw-bold rounded-pill text-decoration-none">تعرف على البرامج</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="join-us" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container py-4">
+        
+        <div class="col-12 text-center mb-5" dir="rtl">
+            <span class="badge tag-identity-color px-3 py-2 rounded-pill fw-bold fs-6 mb-3">انضم إلينا الآن</span>
+            <h2 class="fw-bold text-dark-green mb-2">ابدأ رحلتك مع خطوة</h2>
+            <p class="text-muted">سواء كنت تبحث عن تطوير مهاراتك أو ترغب في ترك أثر مجتمعي، مكانك محجوز معنا</p>
+        </div>
+
+        <div class="row g-4 justify-content-center" dir="rtl">
+            
+            <div class="col-md-6 col-lg-5">
+                <div class="join-card p-5 bg-white text-center d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <div class="join-icon-wrapper mb-4 mx-auto d-flex align-items-center justify-content-center">
+                            <i class="bi bi-mortarboard-fill fs-2"></i>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-3 fs-4">التسجيل كمتدرب</h3>
+                        <p class="text-muted fs-6 lh-base mb-4">
+                            التحق بمخيماتنا وبرامجنا التدريبية التخصصية المجانية، واكتسب المهارات التقنية والشخصية الأكثر طلباً في سوق العمل لتنطلق بثقة نحو مستقبلك المهني.
+                        </p>
+                    </div>
+                    <a href="sgin.html" class="btn btn-join-student w-100 py-3 fw-bold rounded-pill text-decoration-none d-block">سجل الآن كمتدرب</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5">
+                <div class="join-card p-5 bg-white text-center d-flex flex-column justify-content-between h-100 border-highlight-volunteer">
+                    <div>
+                        <div class="join-icon-wrapper volunteer-icon mb-4 mx-auto d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart-pulse-fill fs-2"></i>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-3 fs-4">الانضمام كمتطوع</h3>
+                        <p class="text-muted fs-6 lh-base mb-4">
+                            كن جزءاً من عائلة خُطوة وساهم بمهاراتك ووقتك في تعليم وتأهيل الشباب. نتيح لك بيئة محفزة لتطوير قدراتك القيادية وترك أثر حقيقي ومستدام في المجتمع.
+                        </p>
+                    </div>
+                    <a href="join.html" class="btn btn-join-volunteer w-100 py-3 fw-bold rounded-pill text-decoration-none d-block">سجل الآن كمتطوع</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer pt-5 pb-3" dir="rtl">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            
+            <div class="col-12 col-md-4 text-end d-flex flex-column align-items-start">
+                <div class="d-flex align-items-center mb-3">
+                     <img src="img/log2.png" alt="خطوة" style="height: 50px;">
+                    <div class="text-white text-end ms-3">
+                        <h4 class="fw-bold m-0 fs-5">خطوة</h4>
+                        <span class="text-muted small">Step Initiative</span>
+                    </div>
+                </div>
+                <p class="text-white  mb-4 lh-base text-end" style="max-width: 320px;">
+                    خطوة منصة تعليمية شبابية سودانية تُعنى بتمكين وتأهيل الشباب لسوق العمل من خلال التدريب، والتوجيه، وفرص التطوير المهني.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-3 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">روابط سريعة</h5>
+                <ul class="list-unstyled footer-links-list">
+                    <li><a href="#hero"><i class="bi bi-chevron-left small ms-1"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="bi bi-chevron-left small ms-1"></i> من نحن</a></li>
+                    <li><a href="#services"><i class="bi bi-chevron-left small ms-1"></i> البرامج التدريبية</a></li>
+                    <li><a href="#join-us"><i class="bi bi-chevron-left small ms-1"></i> انضم إلينا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">تواصل معنا</h5>
+                <p class="footer-text-muted small mb-3"><i class="bi bi-envelope-fill ms-2 text-white"></i> info@khotwa.com</p>
+                
+                <div class="d-flex gap-2 justify-content-start mt-2">
+                    <a href="https://www.facebook.com/profile.php?id=61551828546784&mibextid=ZbWKwL" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/step.initiative?igsh=dTh0eHMyYjl3MGZz" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaELgsh8F2pEd68m0x1R" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/httpstmeK_c3mjcSixjZmE0" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider my-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 small footer-text-muted">جميع الحقوق محفوظة © Step Initiative 2026</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<button id="scrollToTopBtn" class="scroll-to-top" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 20px; border: none; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+            
+            <div class="modal-header text-white p-4 justify-content-between align-items-center" style="background-color: #0d2b2e; border-bottom: none;">
+                <h5 class="modal-title fw-bold fs-5" id="feedbackModalLabel">
+                    <i class="bi bi-pencil-square ms-2"></i> شاركنا قصتك في خطوة
+                </h5>
+                <button type="button" class="btn-close btn-close-white m-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4 bg-light">
+                <form id="feedbackForm">
+                    
+                    <div class="mb-3 text-end">
+                        <label for="userName" class="form-label fw-bold text-dark small">الاسم الكامل</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-start-0" style="border-color: #eef2f2;"><i class="bi bi-person text-muted"></i></span>
+                            <input type="text" class="form-control border-end-0 shadow-none" id="userName" placeholder="اكتب اسمك الثنائي أو الثلاثي" required style="border-color: #eef2f2;">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 text-end">
+                        <label class="form-label fw-bold text-dark small">لقد شاركت معنا كـ :</label>
+                        <div class="d-flex gap-4 mt-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="userRole" id="roleStudent" value="student" checked onclick="toggleFeedbackFields()">
+                                <label class="form-check-label small" for="roleStudent">متدرب في مسار تعليمي</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="userRole" id="roleVolunteer" value="volunteer" onclick="toggleFeedbackFields()">
+                                <label class="form-check-label small" for="roleVolunteer">متطوع في المبادرة</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 text-end" id="dynamicFieldContainer">
+                        <label id="dynamicLabel" for="dynamicInput" class="form-label fw-bold text-dark small">اسم الكورس أو المسار التعليمي</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-start-0" style="border-color: #eef2f2;"><i id="dynamicIcon" class="bi bi-book text-muted"></i></span>
+                            <input type="text" class="form-control border-end-0 shadow-none" id="dynamicInput" placeholder="مثال: التسويق الرقمي، لغات البرمجة" required style="border-color: #eef2f2;">
+                        </div>
+                    </div>
+
+                    <div class="mb-4 text-end">
+                        <label for="userOpinion" class="form-label fw-bold text-dark small">رأيك أو تجربتك مع خطوة</label>
+                        <textarea class="form-control shadow-none" id="userOpinion" rows="4" placeholder="كيف كانت تجربتك؟ وما الأثر الذي تركته خطوة في رحلتك؟" required style="border-color: #eef2f2; border-radius: 10px; resize: none;"></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn w-100 py-2.5 fw-bold text-white rounded-pill shadow-none" style="background-color: #0d2b2e; border: none;">إرسال الرأي</button>
+                        <button type="button" class="btn btn-secondary w-50 py-2.5 fw-bold rounded-pill" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script>
+    function toggleFeedbackFields() {
+        const isStudent = document.getElementById('roleStudent').checked;
+        const label = document.getElementById('dynamicLabel');
+        const input = document.getElementById('dynamicInput');
+        const icon = document.getElementById('dynamicIcon');
+
+        if (isStudent) {
+            label.innerText = "اسم الكورس أو المسار التعليمي";
+            input.placeholder = "مثال: التسويق الرقمي،  البرمجة";
+            icon.className = "bi bi-book text-muted";
+        } else {
+            label.innerText = "اسم المكتب التي تطوعت به";
+            input.placeholder = "مثال: علاقات عامة ،  مكتب محتوي";
+            icon.className = "bi bi-briefcase text-muted";
+        }
+    }
+
+    // كود فرونت إند تفاعلي لإغلاق المودل بعد الضغط على إرسال كمحاكاة للنجاح
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert("شكرًا لك! تم استلام رأيك بنجاح.");
+        this.reset();
+        
+        // إغلاق المودل تلقائياً
+        const modalElement = document.getElementById('feedbackModal');
+        const modal = bootstrap.Modal.getInstance(modalElement);
+        modal.hide();
+    });
+</script>
+
+</body>
+</html>

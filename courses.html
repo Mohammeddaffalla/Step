@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title> البرامج - مبادرة خطوة</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+ <style>
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        body {
+            padding-top: 70px !important;
+            background-color: #f8f9fa !important;
+        }
+        
+        /* لون الهيرو الموحد للموقع */
+        .programs-hero-banner {
+            background: #0d2b2e !important; 
+            height: 30vh !important;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* التصميم الأصلي النظيف للكروت */
+        .course-card-original {
+            background-color: #ffffff !important;
+            border-radius: 20px !important;
+            border: 1px solid #eef2f2 !important;
+            padding: 40px 24px 30px 24px !important;
+            transition: all 0.4s ease !important;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* حاوية الأيقونة الدائرية المميزة */
+        .icon-box-container {
+            width: 65px;
+            height: 65px;
+            background-color: #0d2b2e;
+            color: #ffffff;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+            font-size: 26px;
+            transition: all 0.4s ease !important;
+        }
+
+        /* تصميم زر "سجل الآن" الافتراضي الشفاف النظيف */
+        .btn-register-now {
+            display: block;
+            width: 100%;
+            background-color: transparent !important;
+            color: #0d2b2e !important;
+            border: 1px solid #0d2b2e !important;
+            padding: 10px 20px;
+            border-radius: 50px !important;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.4s ease !important;
+            text-align: center;
+        }
+
+        /* تأثير الـ Hover السحري المماثل لكارت التسويق الرقمي الخاص بك */
+        .course-card-original:hover {
+            background-color: #0d2b2e !important;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(13, 43, 46, 0.15) !important;
+        }
+
+        /* تحويل النصوص داخل الكارد للأبيض عند الـ Hover */
+        .course-card-original:hover h5,
+        .course-card-original:hover h5 a,
+        .course-card-original:hover p,
+        .course-card-original:hover .text-muted {
+            color: #ffffff !important;
+        }
+
+        /* تحويل صندوق الأيقونة للأبيض والنص زيتي عند الـ Hover */
+        .course-card-original:hover .icon-box-container {
+            background-color: #ffffff !important;
+            color: #0d2b2e !important;
+        }
+
+        /* تحويل زر سجل الآن للخلفية البيضاء والنص زيتي عند الـ Hover */
+        .course-card-original:hover .btn-register-now {
+            background-color: #ffffff !important;
+            color: #0d2b2e !important;
+            border-color: #ffffff !important;
+        }
+
+        /* أزرار الفلترة العلوية */
+        .btn-filter {
+            border: 1px solid #0d2b2e !important;
+            color: #0d2b2e !important;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+        .btn-filter.active, .btn-filter:hover {
+            background-color: #0d2b2e !important;
+            color: #ffffff !important;
+        }
+
+        .badge-original {
+            background-color: #e6f0f0 !important;
+            color: #0d2b2e !important;
+            font-size: 0.8rem !important;
+            padding: 6px 16px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+        }
+        .course-title-link {
+            color: #0d2b2e !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top shadow-sm py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="navbar-brand d-flex align-items-center m-0 order-1">
+    <img src="img/logo.png" alt="شعار خطوة" class="rounded-circle" style="width: 70px; height: 40px; object-fit: cover;">
+    
+    <div class="d-flex flex-column text-end ms-2 d-none d-sm-inline-flex">
+        <span class="fw-bold text-dark fs-5 lh-1 mb-1">خطوة</span>
+        <span class="text-muted small lh-1" style="font-size: 11px; font-family: sans-serif;">Step Initiative</span>
+    </div>
+</a>
+        <button class="navbar-toggler border-0 p-1 order-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars-staggered" style="color: #144245; font-size: 28px;"></i>
+</button>
+        <div class="collapse navbar-collapse text-center order-2" id="mainmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0 p-0 header-links">
+                <li class="nav-item"><a href="index.html" class="nav-link px-3">الرئيسية</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-3">من نحن</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-3 active fw-bold" style="color: #0d2b2e;">برامجنا</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        إنضم إلينا
+                    </a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sgin.html"><i class="bi bi-mortarboard-fill ms-2"></i>إنضم كمتدرب</a></li>
+                        <li><a class="dropdown-item" href="join.html"><i class="bi bi-heart-pulse-fill ms-2"></i>إنضم كمتطوع</a></li>
+                    </ul>
+                </li>   
+                     </ul>
+            <div class="nav-buttons-container d-flex flex-column flex-md-row gap-2 justify-content-center pt-2 pt-md-0">
+                <a href="login.html" class="btn btn-main-action px-4 py-2 text-white" style="background-color: #0d2b2e;"> تسجيل دخول</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="programs-hero-banner text-center text-white d-flex align-items-center justify-content-center w-100">
+    <div class="container">
+        <h1 class="fw-bold mb-2 fs-3">البرامج والمسارات التدريبية</h1>
+        <p class="text-white-50 fs-6 fw-light mb-0">المسارات الحقيقية المعتمدة لتأهيل وتطوير مهارات الشباب</p>
+    </div>
+</section>
+
+<main class="flex-grow-1 py-5">
+    <div class="container overflow-hidden">
+        
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+            <button class="btn btn-filter active px-4 py-2 rounded-pill small fw-bold" onclick="filterCourses('all')">كل البرامج</button>
+            <button class="btn btn-filter px-4 py-2 rounded-pill small fw-bold" onclick="filterCourses('tech')">التقنية والبرمجة</button>
+            <button class="btn btn-filter px-4 py-2 rounded-pill small fw-bold" onclick="filterCourses('skills')">تطوير الذات والمهارات</button>
+            <button class="btn btn-filter px-4 py-2 rounded-pill small fw-bold" onclick="filterCourses('business')">العمل الحر والتسويق</button>
+        </div>
+
+        <div class="row g-4 justify-content-center" id="courses-grid">
+            
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="tech">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">أساسي</span></div>
+                    <div class="icon-box-container"><i class="bi bi-display"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=computer" class="course-title-link">برامج الحاسوب</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Computer Skills</div>
+                    <p class="text-secondary small lh-lg mb-4">أتقن برامج ماركروسوفت والأدوات الأساسية لسوق العمل. كورسات شاملة في Word و Excel و PowerPoint والأدوات الإلكترونية الأساسية التي يحتاجها كل موظف.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=computer" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="business">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">دخل مستقل</span></div>
+                    <div class="icon-box-container"><i class="bi bi-laptop"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=freelance" class="course-title-link">العمل الحر</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Freelancing</div>
+                    <p class="text-secondary small lh-lg mb-4">ابدأ عملك عبر الإنترنت وابنِ دخلك المستقل. العمل الحر لا يتطلب رأس مال — يتطلب مهارة وإرادة، سنساعدك على البداية وإيجاد أول عميل لك.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=freelance" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="skills">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">للمبدعين</span></div>
+                    <div class="icon-box-container"><i class="bi bi-feather"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=content" class="course-title-link">كتابة المحتوى</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Content Writing</div>
+                    <p class="text-secondary small lh-lg mb-4">حوّل موهبتك في الكتابة إلى مصدر دخل وفرصة حقيقية. إن كانت لديك موهبة الكتابة والإبداع، ستساعدك خطوة على تحويلها إلى مشروع حقيقي وبناء هويتك المهنية.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=content" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="business">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">مطلوب جداً</span></div>
+                    <div class="icon-box-container"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=marketing" class="course-title-link">التسويق الرقمي</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Digital Marketing</div>
+                    <p class="text-secondary small lh-lg mb-4">تعلّم كيف تُسوّق لنفسك وللآخرين وتدخل سوق العمل. ستتعلم أسرار التسويق الرقمي، وبناء حضورك على منصات التواصل الاجتماعي، وتجد عملاً فعلياً في السوق.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=marketing" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="skills">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">للبنات</span></div>
+                    <div class="icon-box-container"><i class="bi bi-people"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=uwayn" class="course-title-link">معسكر العوين</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Al-Uwayn Camp</div>
+                    <p class="text-secondary small lh-lg mb-4">معسكر مخصص للبنات لتطوير الذات وبناء المجتمع. برنامج متكامل للبنات يجمع بين تطوير الذات وتحسين الروتين اليومي وخلق مجتمع داعم ومحفز.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=uwayn" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="skills">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">نمو شخصي</span></div>
+                    <div class="icon-box-container"><i class="bi bi-star"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=self" class="course-title-link">تطوير الذات</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Self Development</div>
+                    <p class="text-secondary small lh-lg mb-4">ابنِ شخصيتك وطوّر مهاراتك وثقتك بنفسك. النجاح يبدأ من الداخل — ستتعلم كيف تبني ثقتك بنفسك، وتنظم وقتك، وتتحدث بثقة أمام الآخرين.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=self" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="skills">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">أساس النجاح</span></div>
+                    <div class="icon-box-container"><i class="bi bi-lightning-charge"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=soft" class="course-title-link">المهارات الشخصية</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Soft Skills</div>
+                    <p class="text-secondary small lh-lg mb-4">طوّر مهاراتك في التواصل والقيادة وإدارة الوقت. النجاح يحتاج أكثر من المعرفة التقنية — ستتعلم كيف تتواصل بفاعلية وتقود وتنظم حياتك المهنية.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=soft" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 course-item" data-category="tech">
+                <div class="card h-100 course-card-original text-center shadow-none">
+                    <div class="mb-3"><span class="badge-original">تقني</span></div>
+                    <div class="icon-box-container"><i class="bi bi-code-slash"></i></div>
+                    <h5 class="fw-bold mb-1 fs-5"><a href="join.html?course=programming" class="course-title-link">لغات البرمجة</a></h5>
+                    <div class="text-uppercase text-muted mb-3" style="font-size: 11px; letter-spacing: 0.5px;">Programming</div>
+                    <p class="text-secondary small lh-lg mb-4">ادخل عالم البرمجة وابنِ مهاراتك التقنية من الصفر. ستتعلم أساسيات البرمجة بلغات حديثة مطلوبة في سوق العمل، بأسلوب مبسط يناسب المبتدئين.</p>
+                    <div class="mt-auto pt-3"><a href="join.html?course=programming" class="btn-register-now">سجل الآن</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<section class="py-5 text-white" style="background-color: #0d2b2e;">
+    <div class="container text-center py-4">
+        
+        <div class="mb-3">
+            <span class="px-3 py-1 rounded-pill small fw-bold" style="background-color: rgba(255, 255, 255, 0.08); color: #ffffff; font-size: 14px;">مجتمعنا</span>
+        </div>
+        
+        <h2 class="fw-bold mb-3 text-white" style="font-size: 2rem; letter-spacing: -0.5px;">خطوة ليست كورسات فحسب<br>خطوة أسرة</h2>
+        <p class="mx-auto mb-5 lh-lg" style="max-width: 600px; font-size: 15px; color: #b3c6c7;">
+            حين تنضم إلى خطوة، لا تنضم إلى برنامج فحسب — <span class="fw-bold text-white">تنضم إلى مجتمع كامل</span> يدعمك ويشجعك كل يوم.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 text-end d-flex flex-column h-100" style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.07); padding-top: 30px !important;">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 ms-auto" style="width: 45px; height: 45px; background-color: #ffffff; color: #0d2b2e; font-size: 18px;">
+                        <i class="bi bi-broadcast"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2 fs-5 text-white">جلسات مباشرة</h4>
+                    <p class="small lh-lg mb-0" style="color: #b3c6c7;">جلسات حية مع خبراء ومتحدثين من أهل الخبرة — أسئلة وإجابات بدون تكلف.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 text-end d-flex flex-column h-100" style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.07); padding-top: 30px !important;">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 ms-auto" style="width: 45px; height: 45px; background-color: #ffffff; color: #0d2b2e; font-size: 18px;">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2 fs-5 text-white">ورش عمل</h4>
+                    <p class="small lh-lg mb-0" style="color: #b3c6c7;">ورش تطبيقية عملية لا نظرية فحسب — تخرج منها بمهارة حقيقية تعمل بها.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 text-end d-flex flex-column h-100" style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.07); padding-top: 30px !important;">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 ms-auto" style="width: 45px; height: 45px; background-color: #ffffff; color: #0d2b2e; font-size: 18px;">
+                        <i class="bi bi-chat-left-text"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2 fs-5 text-white">مجموعات تيليجرام</h4>
+                    <p class="small lh-lg mb-0" style="color: #b3c6c7;">مجموعات خاصة لكل برنامج — تتواصل مع رفاقك في الرحلة وتتعلمون معاً.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 text-end d-flex flex-column h-100" style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.07); padding-top: 30px !important;">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 ms-auto" style="width: 45px; height: 45px; background-color: #ffffff; color: #0d2b2e; font-size: 18px;">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2 fs-5 text-white">دعم مستمر</h4>
+                    <p class="small lh-lg mb-0" style="color: #b3c6c7;">لن تسير وحدك — فريق خطوة معك في كل خطوة، يستمع إليك ويدعمك.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="main-footer pt-5 pb-3" dir="rtl">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            
+            <div class="col-12 col-md-4 text-end d-flex flex-column align-items-start">
+                <div class="d-flex align-items-center mb-3">
+                     <img src="img/log2.png" alt="خطوة" style="height: 50px;">
+                    <div class="text-white text-end ms-3">
+                        <h4 class="fw-bold m-0 fs-5">خطوة</h4>
+                        <span class="text-muted small">Step Initiative</span>
+                    </div>
+                </div>
+                <p class="text-muted small mb-4 lh-base text-end" style="max-width: 320px;">
+                    خطوة منصة تعليمية شبابية سودانية تُعنى بتمكين وتأهيل الشباب لسوق العمل من خلال التدريب، والتوجيه، وفرص التطوير المهني.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-3 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">روابط سريعة</h5>
+                <ul class="list-unstyled footer-links-list">
+                    <li><a href="#hero"><i class="bi bi-chevron-left small ms-1"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="bi bi-chevron-left small ms-1"></i> من نحن</a></li>
+                    <li><a href="#services"><i class="bi bi-chevron-left small ms-1"></i> البرامج التدريبية</a></li>
+                    <li><a href="#join-us"><i class="bi bi-chevron-left small ms-1"></i> انضم إلينا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">تواصل معنا</h5>
+                <p class="footer-text-muted small mb-3"><i class="bi bi-envelope-fill ms-2 text-white"></i> info@khotwa.com</p>
+                
+                 <div class="d-flex gap-2 justify-content-start mt-2">
+                    <a href="https://www.facebook.com/profile.php?id=61551828546784&mibextid=ZbWKwL" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/step.initiative?igsh=dTh0eHMyYjl3MGZz" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaELgsh8F2pEd68m0x1R" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/httpstmeK_c3mjcSixjZmE0" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider my-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 small footer-text-muted">جميع الحقوق محفوظة © Step Initiative 2026</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<button id="scrollToTopBtn" class="scroll-to-top" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+<script>
+    function filterCourses(category) {
+        const buttons = document.querySelectorAll('.btn-filter');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        const items = document.querySelectorAll('.course-item');
+        items.forEach(item => {
+            if (category === 'all' || item.getAttribute('data-category') === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

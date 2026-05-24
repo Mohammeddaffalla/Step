@@ -1,0 +1,992 @@
+/* استيراد خط عالي الاحترافية للمنصات التعليمية */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+    /* إزاحة علوية حتى لا يغطي الـ Navbar المثبت محتوى الـ Hero */
+    padding-top: 75px; 
+}
+
+/* تخصيص روابط الهيدر */
+.navbar .header-links {
+    gap: 5px;
+}
+
+.navbar .nav-link {
+    color: #2b303a !important;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* تأثير عند تمرير الماوس فوق الروابط */
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+    color: #144245 !important;
+    font-weight: 700;
+}
+
+/* زر تسجيل الدخول المخصص */
+.btn-main-action {
+    background-color: #144245;
+    border: 1px solid #144245;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(20, 66, 69, 0.15);
+}
+
+.btn-main-action:hover {
+    background-color: #1a565a;
+    border-color: #1a565a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(20, 66, 69, 0.2);
+}
+
+/* شاشات الجوال والأجهزة اللوحية (Media Query) */
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 65px;   
+}
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 65px; 
+    }
+    
+    /* تعديل حاوية القائمة لتأخذ عرض الشاشة كاملاً 100% من الحافة للحافة */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; /* تفتح مباشرة أسفل شريط النوافبار دون ترك أي فراغ */
+        left: 0;
+        right: 0;
+        width: 100%; /* تجبر الصندوق الأبيض على أخذ كامل العرض */
+        background-color: #ffffff !important;
+        padding: 25px 20px !important;
+        
+        /* حواف دائرية ناعمة فقط من الأسفل لتظهر بشكل مودرن وأنيق */
+        border-radius: 0 0 20px 20px !important; 
+        
+        /* ظلال ناعمة وممتدة لأسفل تفصل القائمة عن قسم الـ Hero */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+        text-align: right !important; 
+        z-index: 9999 !important;
+    }
+    
+    /* ضبط محاذاة الروابط لتكون منسقة تماماً جهة اليمين */
+    .navbar .header-links {
+        gap: 12px;
+        margin-bottom: 20px !important;
+        align-items: flex-start; 
+        padding-right: 15px !important; 
+    }
+    
+    .navbar .nav-link {
+        padding: 10px 0 !important; 
+        width: 100%;
+        font-size: 17px; /* تكبير الخط قليلاً لسهولة القراءة والضغط على الجوال */
+    }
+    
+    /* زر تسجيل الدخول يأخذ كامل العرض المتاح بداخلها بتناسق */
+    .btn-main-action {
+        width: 100%; 
+        padding: 12px !important;
+        font-size: 16px;
+    }
+}
+}
+
+@media (min-width: 768px) {
+            .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+            .navbar-nav .nav-item.dropdown .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        /* تنسيقات جمالية متناسقة للقائمة المنسدلة مع الهوية البصرية للموقع */
+        .dropdown-menu {
+            border: none !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+            border-radius: 8px !important;
+            padding: 8px 0 !important;
+        }
+        .dropdown-item {
+            text-align: right !important;
+            padding: 8px 20px !important;
+            color: #333 !important;
+            font-size: 15px;
+            transition: all 0.2s ease;
+        }
+        .dropdown-item:hover {
+            background-color: #144245 !important;
+            color: #ffffff !important;
+        }
+/* إخفاء السهم الصغير الخاص بالقائمة المنسدلة */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+
+
+
+/* اللون الأساسي للمبادرة بناءً على الكود الخاص بك */
+:root {
+    --main-green: #144245;
+    --main-green-hover: #1c5b5f;
+}
+
+.text-dark-green {
+    color: var(--main-green) !important;
+}
+
+/* تنسيق قسم الـ Hero */
+.hero-section {
+    background-color: #0d2b2e;
+    min-height: 90vh;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+/* تأثير الإضاءة الخلفية */
+.hero-glow-effect {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    filter: blur(80px);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+}
+
+/* خطوط العناوين المتجاوبة */
+.hero-title {
+    font-size: calc(1.8rem + 2vw); /* يصغر ويكبر ديناميكياً مع حجم الشاشة */
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.hero-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+/* الأزرار الاحترافية */
+.btn-cta-primary {
+    background-color: #ffffff;
+    color: var(--main-green) !important;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cta-primary:hover {
+    background-color: transparent;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+.btn-cta-secondary {
+    background-color: transparent;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-secondary:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* الصورة والتأثيرات الحركية */
+.hero-image-wrapper {
+    z-index: 2;
+}
+
+.hero-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+}
+
+.hero-image-wrapper:hover .hero-img {
+    transform: scale(1.03) translateY(-5px);
+}
+
+.hero-img-backdrop {
+    top: 15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.hero-image-wrapper:hover .hero-img-backdrop {
+    top: 10px;
+    left: -10px;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* الشاشات الصغيرة (الجوال) */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 100px; /* مسافة إضافية بسبب الـ Navbar الثابت */
+        padding-bottom: 40px;
+    }
+    .hero-description {
+        margin-right: auto;
+        margin-left: auto; /* لتوسيط النص على الجوال */
+    }
+    .hero-img {
+        max-height: 280px; /* تصغير حجم الصورة على الجوال لتوفير مساحة */
+        margin-top: 20px;
+    }
+    .hero-img-backdrop {
+        display: none; /* إخفاء التأثير الخلفي لتبسيط الواجهة على الجوال */
+    }
+}
+
+
+
+/* ألوان الهوية البصرية الموحدة */
+.text-dark-green { color: #144245 !important; }
+.text-success-green { color: #198754 !important; }
+.bg-green-subtle { background-color: rgba(25, 135, 84, 0.08) !important; }
+
+/* تأثيرات صندوق النص الجانبي للكمبيوتر */
+.about-accent-box {
+    background-color: rgba(20, 66, 69, 0.03);
+    border: 2px dashed rgba(20, 66, 69, 0.1);
+}
+
+/* زر اقرأ المزيد */
+.btn-read-more {
+    color: #144245;
+    border: 1px solid #144245;
+    transition: all 0.3s ease;
+}
+.btn-read-more:hover {
+    background-color: #144245;
+    color: #ffffff !important;
+    transform: translateX(-3px);
+}
+
+/* ألوان الهوية البصرية الموحدة */
+.text-dark-green { color: #144245 !important; }
+.text-success-green { color: #198754 !important; }
+.bg-green-subtle { background-color: rgba(25, 135, 84, 0.08) !important; }
+.bg-dark-green { background-color: #144245 !important; } /* لون الخلفية الداكنة والجديدة للأيقونة */
+
+/* تأثيرات صندوق النص الجانبي للكمبيوتر */
+.about-accent-box {
+    background-color: rgba(20, 66, 69, 0.03);
+    border: 2px dashed rgba(20, 66, 69, 0.1);
+}
+
+/* زر اقرأ المزيد */
+.btn-read-more {
+    color: #144245;
+    border: 1px solid #144245;
+    transition: all 0.3s ease;
+}
+.btn-read-more:hover {
+    background-color: #144245;
+    color: #ffffff !important;
+    transform: translateX(-3px);
+}
+/* ألوان الهوية البصرية الموحدة */
+.text-dark-green { color: #144245 !important; }
+.text-success-green { color: #198754 !important; }
+.bg-green-subtle { background-color: rgba(25, 135, 84, 0.08) !important; }
+.bg-dark-green { background-color: #144245 !important; }
+
+/* لون خلفية القسم كامل (رمادي ناعم جداً ليصنع التباين مثل صورتك) */
+#about-section {
+    background-color: #f4f6f6 !important; /* لون هادئ يرفع الكروت البيضاء لأعلى */
+}
+
+/* تأثيرات صندوق النص الجانبي للكمبيوتر */
+.about-accent-box {
+    background-color: rgba(20, 66, 69, 0.03);
+    border: 2px dashed rgba(20, 66, 69, 0.1);
+}
+
+/* زر اقرأ المزيد */
+.btn-read-more {
+    color: #144245;
+    border: 1px solid #144245;
+    transition: all 0.3s ease;
+}
+.btn-read-more:hover {
+    background-color: #144245;
+    color: #ffffff !important;
+    transform: translateX(-3px);
+}
+
+/* التنسيق المطور للكروت ومطابق تماماً للصورة المعروضة */
+.feature-card {
+    background-color: #ffffff !important; /* أبيض صافي ليبرز فوق الخلفية */
+    border-radius: 16px !important; /* انحناء حواف متناسق ومودرن */
+    border: 1px solid rgba(0, 0, 0, 0.03) !important; /* حد غير مرئي تقريباً */
+    
+    /* الـ Box Shadow الاحترافي والعميق المأخوذ من نمط صورتك */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important; 
+    
+    transition: all 0.25s ease-in-out;
+}
+
+/* حواف الأيقونات الثابتة والبارزة افتراضياً */
+.feature-card .icon-box {
+    border-radius: 12px !important;
+}
+
+/* تأثير الـ Hover (يصبح البوردر solid وبارز عند تمرير الماوس) */
+.feature-card:hover {
+    border: 1.5px solid #144245 !important; 
+    box-shadow: 0 15px 35px rgba(20, 66, 69, 0.1) !important; /* تزداد الظلال عمقاً */
+}
+
+/* توافق الشاشات لضمان عدم الاهتزاز على الجوال */
+@media (max-width: 767.98px) {
+    .feature-card {
+        padding: 25px 20px !important;
+    }
+}
+
+
+/* كلاس موحد لجميع البادجات بلون هوية المبادرة الفخم (أخضر داكن شفاف بنسبة مريحة) */
+.tag-identity-color { 
+    background-color: rgba(20, 66, 69, 0.08) !important; 
+    color: #144245 !important; 
+}
+
+/* تنسيق زر "سجل الآن" المطور والمختصر */
+.btn-course-submit {
+    color: #144245 !important;
+    background-color: transparent;
+    border: 1.5px solid #144245 !important;
+    font-size: 14.5px;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-course-submit:hover {
+    color: #ffffff !important;
+    background-color: #144245 !important;
+    box-shadow: 0 4px 12px rgba(20, 66, 69, 0.2) !important;
+}
+
+/* التنسيقات الهيكلية للكارت ببروز واضح وثابت */
+.replit-course-card {
+    border-radius: 20px !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.border-special-girls {
+    border: 1.5px solid #144245 !important;
+}
+
+.card-icon-main {
+    width: 65px;
+    height: 65px;
+    background-color: #144245;
+    color: #ffffff;
+    border-radius: 16px;
+}
+
+.card-top-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.replit-course-card:hover {
+    border: 1.5px solid #144245 !important;
+    box-shadow: 0 15px 35px rgba(20, 66, 69, 0.08) !important;
+    transform: translateY(-4px);
+}
+
+/* تنسيق الكروت الخمسة لتظهر مصفوفة ومتساوية الارتفاع تماماً */
+.achievement-card {
+    border-radius: 20px !important;
+    border: 1.5px solid rgba(20, 66, 69, 0.05) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03) !important;
+    padding: 30px 10px !important; /* بادنج متناسق جداً للمساحة الجديدة لـ 5 كروت */
+    transition: all 0.25s ease-in-out;
+}
+
+.achievement-card:hover {
+    border: 1.5px solid #144245 !important;
+    box-shadow: 0 15px 35px rgba(20, 66, 69, 0.08) !important;
+    transform: translateY(-5px);
+}
+
+.ach-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    background-color: #144245;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+
+/* ==========================================================================
+   تنسيقات قسم كروت الانضمام (متدرب ومتطوع)
+   ========================================================================== */
+
+.join-card {
+    border-radius: 24px !important; /* حواف دائرية فخمة */
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04) !important; /* بروز مجسم ناعم */
+    transition: all 0.25s ease-in-out;
+}
+
+/* حركة التفاعل عند مرور الماوس على الكارت */
+.join-card:hover {
+    box-shadow: 0 20px 45px rgba(20, 66, 69, 0.08) !important;
+    transform: translateY(-5px);
+}
+
+/* تمييز خفيف لكارت التطوع بحدود من لون الهوية */
+.border-highlight-volunteer {
+    border: 1.5px solid rgba(20, 66, 69, 0.1) !important;
+}
+.join-card:hover.border-highlight-volunteer {
+    border: 1.5px solid #144245 !important;
+}
+
+/* دوائر الأيقونات العلوية */
+.join-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(20, 66, 69, 0.06);
+    color: #144245;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+/* جعل أيقونة التطوع بلون هوية كامل لإبراز العطاء */
+.volunteer-icon {
+    background-color: #144245;
+    color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+/* أزرار اتخاذ الإجراء (Buttons CTA) بألوان الهوية الموحدة */
+
+/* زر المتدرب: شفاف بحدود */
+.btn-join-student {
+    color: #144245 !important;
+    background-color: transparent;
+    border: 1.5px solid #144245 !important;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+}
+.btn-join-student:hover {
+    color: #ffffff !important;
+    background-color: #144245 !important;
+    box-shadow: 0 6px 15px rgba(20, 66, 69, 0.2) !important;
+}
+
+/* زر المتطوع: ممتلئ بلون الهوية الفخم */
+.btn-join-volunteer {
+    color: #ffffff !important;
+    background-color: #144245 !important;
+    border: 1.5px solid #144245 !important;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+}
+.btn-join-volunteer:hover {
+    background-color: #0d2b2e !important; /* تغميق لون الهوية قليلاً عند الهوفر */
+    border-color: #0d2b2e !important;
+    box-shadow: 0 6px 15px rgba(20, 66, 69, 0.3) !important;
+}
+
+/* ==========================================================================
+   تنسيقات قسم الفوتر الرئيسي بلون الهوية الداكن
+   ========================================================================== */
+
+.main-footer {
+    background-color: #0d2c2f !important; /* لون هوية المبادرة الداكن والأساسي */
+    border-top: 4px solid rgba(255, 255, 255, 0.05);
+}
+
+/* نصوص الفوتر المريحة للعين فوق الخلفية الداكنة */
+.footer-text-muted {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 14.5px;
+}
+
+/* قائمة الروابط السريعة وتأثير التمرير عليها */
+.footer-links-list li {
+    margin-bottom: 12px;
+}
+
+.footer-links-list li a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none;
+    font-size: 14.5px;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.footer-links-list li a:hover {
+    color: #ffffff !important;
+    transform: translateX(-5px); /* حركة إزاحة لطيفة لليمين عند الهوفر */
+}
+
+/* خط الفصل الرفيع */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* دوائر أيقونات التواصل الاجتماعي وتفاعلها الهادئ */
+.footer-social-icon {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff !important;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-social-icon:hover {
+    background-color: #ffffff;
+    color: #144245 !important; /* ينعكس اللون ليصبح بلون الهوية عند الهوفر */
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================================================
+   تنسيقات قسم الدعوة للانضمام (CTA Section) المطابق تماماً للصورة
+   ========================================================================== */
+
+.cta-join-section {
+    /* تدرج لوني زيتي فخم يعطي عمقاً وإضاءة خفيفة في المنتصف كما في الصورة */
+    background: #0d2b2e;
+    overflow: hidden;
+}
+
+/* البادج العلوي الدائري الناعم */
+.cta-status-badge {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* النقطة المضيئة داخل البادج */
+.badge-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #52b788; /* لون أخضر مضيء هادئ */
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* أبعاد ونصوص العنوان الرئيسي */
+.cta-main-title {
+    font-size: 3rem !important; /* حجم ضخم وممتاز متوافق مع الشاشات الكبيرة */
+    letter-spacing: -0.5px;
+}
+
+/* ضبط تباين ومساحة النصوص الوصفية */
+.cta-description-wrapper {
+    max-width: 650px;
+}
+.text-white-85 { color: rgba(255, 255, 255, 0.85) !important; }
+.text-white-70 { color: rgba(255, 255, 255, 0.70) !important; line-height: 1.7; }
+
+/* -------------------------------------------------------------------------- */
+/* أزرار القسم التفاعلية */
+
+/* الزر الرئيسي الممتلئ باللون الأبيض */
+.btn-cta-primary {
+    background-color: #ffffff !important;
+    color: #0b2b2d !important; /* يكتب باللون الزيتي الداكن للحفاظ على التباين */
+    border: 2px solid #ffffff !important;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+.btn-cta-primary:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* الزر الشفاف المفرغ بحدود رشيقة */
+.btn-cta-outline {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    transition: all 0.25s ease-in-out;
+}
+.btn-cta-outline:hover {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transform: translateY(-3px);
+}
+
+
+
+/* الاستجابة والتوافق التام مع شاشات الجوال */
+@media (max-width: 768px) {
+    .cta-main-title {
+        font-size: 2rem !important; /* تصغير حجم الخط ليناسب شاشة الهاتف بشكل مثالي */
+    }
+}
+
+/* ==========================================================================
+   تنسيقات قسم آراء المتدربين والمتطوعين (Testimonials)
+   ========================================================================== */
+
+/* كروت الآراء المجسمة */
+.testimonial-card {
+    border-radius: 20px !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 15px 35px rgba(20, 66, 69, 0.07) !important;
+    transform: translateY(-4px);
+}
+
+/* تنسيق النصوص والآراء */
+.testimonial-opinion {
+    color: #4a5568 !important;
+    font-size: 15px;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* أيقونة الاقتباس الجمالية بلون الهوية خفيف التباين */
+.quote-icon {
+    color: rgba(20, 66, 69, 0.12);
+    line-height: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/* كلاسات تمييز البادجات (التصنيفات) */
+
+/* بادج المتدرب: خلفية ناعمة من لون الهوية الأخضر الداكن */
+.badge-trainee {
+    background-color: rgba(20, 66, 69, 0.08) !important;
+    color: #144245 !important;
+    font-weight: 600;
+    font-size: 12.5px;
+}
+
+/* بادج المتطوع: خلفية ناعمة من لون تكميلي مضيء أو خفيف */
+.badge-volunteer {
+    background-color: rgba(82, 183, 136, 0.12) !important;
+    color: #2d6a4f !important;
+    font-weight: 600;
+    font-size: 12.5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* تخصيص مؤشرات التنقل السفلية للسلايدر */
+.testimonial-carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #144245 !important;
+    opacity: 0.2;
+    border: none;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+}
+
+.testimonial-carousel .carousel-indicators button.active {
+    opacity: 1;
+    width: 24px; /* تصبح ممتدة بشكل كبسولة أنيقة عند التفعيل */
+    border-radius: 5px;
+}
+
+
+/* ==========================================================================
+   تنسيقات صفحة التسجيل كمتدرب (الهيرو الملموم والفورم المحكم)
+   ========================================================================== */
+
+/* لون خلفية مريح لصفحة التسجيل */
+.bg-light-setup {
+    background-color: #f4f7f6 !important;
+}
+
+/* تنسيق الهيرو الصغير الملموم بنفس خلفية الهيرو الرئيسية للموقع */
+/* تنسيق قسم الهيرو الفخم بارتفاع 60% من الشاشة */
+/* التنسيق المحدث لقسم الهيرو لمنع الفراغ الأبيض تماماً */
+.form-hero-banner {
+    background: radial-gradient(circle, #184e52 0%, #0b2b2d 100%) !important;
+    min-height: 40vh !important; /* الارتفاع الذي اعتمدته وتفضله */
+    margin-top: 0 !important; /* إلغاء الإزاحة الخارجية التي سببت الفراغ */
+    border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+/* كارت الاستمارة المحكم الحجم الملموم */
+.form-card {
+    border-radius: 20px !important;
+    border: 1px solid rgba(20, 66, 69, 0.04) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* دائرة الأيقونة العلوية للفورم */
+.form-logo-icon {
+    width: 55px;
+    height: 55px;
+    background-color: #144245;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+/* حقول الإدخال والـ Select والـ Textarea النظيفة */
+.custom-input {
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    border: 1.5px solid #e2e8f0 !important;
+    color: #2d3748 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* تفعيل لون الهوية فور الوقوف على الحقل للكتابة */
+.custom-input:focus {
+    border-color: #144245 !important;
+    box-shadow: 0 0 0 3px rgba(20, 66, 69, 0.08) !important;
+    background-color: #ffffff !important;
+}
+
+/* زر إرسال الاستمارة المنسجم مع المساحة */
+.btn-submit-form {
+    background-color: #144245 !important;
+    color: #ffffff !important;
+    border: 1.5px solid #144245 !important;
+    padding: 12px !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-submit-form:hover {
+    background-color: #0d2b2e !important;
+    border-color: #0d2b2e !important;
+    box-shadow: 0 6px 15px rgba(20, 66, 69, 0.2) !important;
+    transform: translateY(-1px);
+}
+
+.text-dark-green {
+    color: #144245 !important;
+}
+
+/* تنسيق هندسي فخم لزر التالي بـ padding واسع وواسع تماماً */
+.btn-submit-form.px-5 {
+    padding-left: 45px !important; /* مساحة فخمة على اليسار */
+    padding-right: 45px !important; /* مساحة فخمة على اليمين */
+}
+
+/* تنسيق حقل السيرة الذاتية (input type="file") الموحد */
+.custom-input.form-control-file {
+    height: calc(1.5em + 1.25rem + 2px) !important; /* ضمان نفس ارتفاع الحقول الأخرى */
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    line-height: 1.5;
+    background-color: #fdfdfd !important;
+    cursor: pointer;
+}
+.custom-input.form-control-file::-webkit-file-upload-button {
+    background-color: #144245; /* لون الهوية الزيتي الفخم */
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: -10px;
+    font-weight: 600;
+}
+
+/* ==================== تنسيقات كروت قصة البداية الأصلية ==================== */
+.story-card {
+    border: 1px solid rgba(20, 66, 69, 0.06) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(20, 66, 69, 0.05) !important;
+}
+
+/* صندوق الأيقونة الدائري المفتوح والناعم خلف الأيقونات */
+.story-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(20, 66, 69, 0.06);
+    border-radius: 50%;
+}
+
+/* كروت الرؤية والرسالة في الأسفل */
+.about-card {
+    border-radius: 16px !important;
+    border: 1px solid rgba(20, 66, 69, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(20, 66, 69, 0.06) !important;
+}
+
+.about-icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #144245;
+    border-radius: 50%;
+}
+
+
+
+/* تنسيق قسم رؤيتنا الجديد */
+.our-vision-section {
+    background-color: #0d2b2e; /* اللون الداكن الخاص بالمبادرة المستوحى من الهوية */
+    color: #ffffff;
+}
+
+/* ضبط العناصر والمحاذاة لليمين */
+.vision-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ينقل كل المحتويات بما فيها الأيقونة إلى اليمين في المتصفح العربي */
+    text-align: right;       /* يضمن محاذاة النصوص لليمين تماماً */
+}
+
+/* تنسيق الأيقونة لتظهر بشكل جميل وثابت على اليمين */
+.vision-card .icon-wrapper {
+    font-size: 2rem;         /* حجم الأيقونة */
+    color: #ffffff;          /* لون الأيقونة لتتناسب مع الخلفية الداكنة */
+    margin-left: auto;       /* لضمان ثباتها جهة اليمين */
+    margin-right: 0;
+}
+
+/* خلفية القسم الأساسية (التي اخترتيها أنتِ) */
+.our-vision-section {
+    background-color: #0d2b2e !important;
+    color: #ffffff;
+}
+
+/* تنسيق الكروت ليتوافق مع خلفيتكِ */
+.vision-card {
+    /* درجة أفتح قليلاً ومستوحاة من نفس لون الخلفية لتعطي عمقاً جميلاً */
+    background-color: #14383c !important; 
+    
+    /* إطار خفيف جداً شبه شفاف ليحدد أطراف الكارت */
+    border: 1px solid rgba(255, 255, 255, 0.05) !important; 
+    
+    /* زوايا منحنية ناعمة (Border Radius) متناسقة مع باقي الموقع */
+    border-radius: 12px !important; 
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير حركي تفاعلي عند تمرير الماوس فوق الكارت */
+.vision-card:hover {
+    transform: translateY(-5px);
+    /* ظل ناعم داكن يناسب الخلفيات الغامقة */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+}
+
+/* محاذاة محتويات الكارت بالكامل إلى اليمين */
+.vision-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* يدفع العناصر لليمين في المتصفحات التي تدعم العربية */
+    text-align: right;       /* يضمن محاذاة النصوص لليمين */
+}
+
+/* تنسيق الأيقونة لتظهر بشكل بارز على اليمين */
+.vision-card .icon-wrapper {
+    font-size: 2rem;
+    color: #ffffff; /* يمكنكِ تغييره للون الهوية الثانوي لو وجد (مثل الذهبي أو الفيروزي الخفيف) */
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px; /* تم التغيير إلى اليسار هنا */
+    width: 45px;
+    height: 45px;
+    background: rgba(20, 66, 69, 0.2); 
+    color: #144245; 
+    border: 1px solid rgba(20, 66, 69, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    
+    /* تأثيرات الزجاج والنعومة */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    /* مخفي في البداية */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+/* تأثير حركي عند تمرير الماوس */
+.scroll-to-top:hover {
+    background: #144245; 
+    color: #ffffff; 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 20px rgba(20, 66, 69, 0.4);
+}

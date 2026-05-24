@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <title>الانضمام كمتطوع — مبادرة خطوة</title>
+</head>
+<body class="bg-light-setup d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top shadow-sm py-2" dir="rtl">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <a href="index.html" class="navbar-brand d-flex align-items-center m-0 order-1">
+    <img src="img/logo.png" alt="شعار خطوة" class="rounded-circle" style="width: 70px; height: 40px; object-fit: cover;">
+    
+    <div class="d-flex flex-column text-end ms-2 d-none d-sm-inline-flex">
+        <span class="fw-bold text-dark fs-5 lh-1 mb-1">خطوة</span>
+        <span class="text-muted small lh-1" style="font-size: 11px; font-family: sans-serif;">Step Initiative</span>
+    </div>
+</a>
+        <button class="navbar-toggler border-0 p-1 order-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars-staggered" style="color: #144245; font-size: 28px;"></i>
+</button>
+
+        <div class="collapse navbar-collapse text-center order-2" id="mainmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0 p-0 header-links">
+                <li class="nav-item"><a href="index.html" class="nav-link px-3">الرئيسية</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-3">من نحن</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-3">برامجنا</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        إنضم إلينا
+                    </a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sgin.html"><i class="bi bi-mortarboard-fill ms-2"></i>إنضم كمتدرب</a></li>
+                        <li><a class="dropdown-item" href="join.html"><i class="bi bi-heart-pulse-fill ms-2"></i>إنضم كمتطوع</a></li>
+                    </ul>
+            </ul>
+            
+            <div class="nav-buttons-container d-flex flex-column flex-md-row gap-2 justify-content-center pt-2 pt-md-0">
+                <a href="login.html" class="btn btn-main-action px-4 py-2 text-white">تسجيل دخول</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<section class="volunteer-hero-banner text-center text-white d-flex align-items-center justify-content-center" style="background: radial-gradient(circle, #184e52 0%, #0b2b2d 100%) !important; height: 40vh !important; margin-top: 0 !important; padding-top: 60px !important; border-bottom: 3px solid rgba(255, 255, 255, 0.05);" dir="rtl">
+    <div class="container py-5">
+        <h1 class="fw-bold mb-2 fs-2">صنّاع الأثر — انضم كمتطوع</h1>
+        <p class="text-white-50 fs-6 fw-light mb-0">ساهم بمهاراتك ووقتك في تمكين وتأهيل الشباب</p>
+    </div>
+</section>
+
+<main class="flex-grow-1 d-flex align-items-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-6">
+                
+                <div class="form-card p-4 p-md-5 bg-white shadow-sm" dir="rtl">
+                    
+                    <div class="progress mb-4" style="height: 6px; border-radius: 10px;">
+                        <div id="formProgress" class="progress-bar" role="progressbar" style="width: 33%; background-color: #144245; transition: width 0.3s ease;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4 text-muted small fw-bold">
+                        <span id="stepBadge1" class="text-dark-green">1. البيانات الأساسية</span>
+                        <span id="stepBadge2">2. المهارات والتخصص</span>
+                        <span id="stepBadge3">3. الالتزام والشغف</span>
+                    </div>
+
+                    <form id="multiStepForm" action="#" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="form-step-section active-step" id="step1">
+                            <h5 class="fw-bold text-dark-green border-bottom pb-2 mb-3 fs-6"><i class="bi bi-person-vcard ms-2"></i>البيانات الأساسية</h5>
+                            
+                            <div class="row g-3 mb-3">
+                                <div class="col-8">
+                                    <label class="form-label fw-bold text-dark small">الاسم الكامل <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control custom-input" name="volunteerName" placeholder="الاسم ثلاثي" required>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label fw-bold text-dark small">العمر <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control custom-input" name="volunteerAge" min="18" max="60" placeholder="العمر" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-12 col-sm-6">
+                                    <label class="form-label fw-bold text-dark small">رقم الهاتف (واتساب) <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control custom-input" name="volunteerWhatsapp" placeholder="رمز الدولة +" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label class="form-label fw-bold text-dark small">البريد الإلكتروني (إختياري)<span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control custom-input" name="volunteerEmail" placeholder="name@example.com">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold text-dark small">المدينة / الدولة  <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control custom-input" name="volunteerLocation" placeholder="مثال: الخرطوم، السودان" required>
+                            </div>
+                        </div>
+
+                        <div class="form-step-section d-none" id="step2">
+                            <h5 class="fw-bold text-dark-green border-bottom pb-2 mb-3 fs-6"><i class="bi bi-briefcase ms-2"></i>التخصص والمهارات</h5>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">أي مكتب ترغب في الانضمام إليه؟ <span class="text-danger">*</span></label>
+                                <select class="form-select custom-input" name="volunteerOffice" required>
+                                    <option value="" selected disabled>اختر المكتب  ...</option>
+                                    <option value="content">مكتب محتوى</option>
+                                    <option value="design">مكتب تصميم</option>
+                                    <option value="pr">مكتب علاقات عامة</option>
+                                    <option value="hr">مكتب موارد بشرية</option>
+                                    <option value="supervision">مكتب متابعة واشراف</option>
+                                    <option value="social-media">مكتب السوشال ميديا</option>
+                                    <option value="marketing">مكتب تسويق</option>
+                                    <option value="reels-editing">مكتب الريلز والمونتاج</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">ما هي مهاراتك الأساسية؟ (إختياري)<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control custom-input" name="volunteerSkills" placeholder="مثال:  اكسل، التصميم، مونتاج  ...">
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-12 col-sm-6">
+                                    <label class="form-label fw-bold text-dark small">رابط أعمالك (Portfolio) <span class="text-muted fst-italic">(اختياري)</span></label>
+                                    <input type="url" class="form-control custom-input" name="volunteerPortfolio" placeholder="https://example.com/my-work">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label class="form-label fw-bold text-dark small"> السيرة الذاتية (CV) <span class="text-muted fst-italic">(اختياري)</span></label>
+                                    <input type="file" class="form-control custom-input form-control-file" name="volunteerCV" accept=".pdf,.doc,.docx">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step-section d-none" id="step3">
+                            <h5 class="fw-bold text-dark-green border-bottom pb-2 mb-3 fs-6"><i class="bi bi-chat-left-heart ms-2"></i>الأسئلة الشرحية وشغفك</h5>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">لماذا ترغب في الانضمام إلى مبادرة خطوة؟ <span class="text-danger">*</span></label>
+                                <textarea class="form-control custom-input" name="whyJoinVolunteer" rows="2" placeholder="اكتب لنا عن دوافعك..." required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">كيف يمكنك أن تضيف قيمة لخطوة؟ <span class="text-danger">*</span></label>
+                                <textarea class="form-control custom-input" name="addValue" rows="2" placeholder="ما تميزك الإبداعي؟" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">هل سبق لك التطوع من قبل؟ <span class="text-danger">*</span></label>
+                                <textarea class="form-control custom-input" name="pastExperience" rows="2" placeholder="اذكر لنا باختصار خبراتك والمجالات السابقة..." required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">هل لديك التزامات تؤثر على عملك معنا؟ <span class="text-danger">*</span></label>
+                                <textarea class="form-control custom-input" name="otherCommitments" rows="2" placeholder="جامعة، وظيفة،    ..." required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small">كم ساعة يمكنك الالتزام بها أسبوعياً؟ <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control custom-input" name="weeklyHours" placeholder="مثال: 10 ساعات أسبوعياً" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-dark small d-block mb-2">هل يمكنك الالتزام لمدة ثلاثة أشهر على الأقل؟ <span class="text-danger">*</span></label>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check"><input class="form-check-input" type="radio" name="threeMonthsCommit" id="vYes" value="yes" checked><label class="form-check-label text-dark small" for="vYes">نعم</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" name="threeMonthsCommit" id="vNo" value="no"><label class="form-check-label text-dark small" for="vNo">لا</label></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 p-3 rounded-3 bg-light border">
+                                <label class="form-label fw-bold text-dark small d-block mb-2">هل توافق على الالتزام بسياسات ولوائح مبادرة خطوة؟ <span class="text-danger">*</span></label>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check"><input class="form-check-input" type="radio" name="policyAgree" id="pYes" value="yes" required><label class="form-check-label text-dark small fw-bold text-success" for="pYes">نعم </label></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" name="policyAgree" id="pNo" value="no"><label class="form-check-label text-dark small fw-bold text-danger" for="pNo"> لا </label></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold text-dark small">مساحة حرة <span class="text-muted fst-italic">(اختياري)</span></label>
+                                <textarea class="form-control custom-input" name="freeNotes" rows="3" placeholder="أي تفاصيل إضافية تود مشاركتها مع إدارة المبادرة..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between pt-2">
+                            <button type="button" id="prevBtn" class="btn btn-outline-secondary px-4 py-2 fw-bold rounded-pill d-none" onclick="changeStep(-1)">السابق</button>
+                            <button type="button" id="nextBtn" class="btn btn-submit-form px-5 py-2 fw-bold rounded-pill ms-auto" onclick="changeStep(1)">التالي</button>
+                            <button type="submit" id="submitBtn" class="btn btn-success px-5 py-2 fw-bold rounded-pill d-none ms-auto" style="background-color: #144245 !important; border-color: #144245 !important;">تقديم الطلب الرسمي</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="main-footer pt-5 pb-3" dir="rtl">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            
+            <div class="col-12 col-md-4 text-end d-flex flex-column align-items-start">
+                <div class="d-flex align-items-center mb-3">
+                     <img src="img/log2.png" alt="خطوة" style="height: 50px;">
+                    <div class="text-white text-end ms-3">
+                        <h4 class="fw-bold m-0 fs-5">خطوة</h4>
+                        <span class="text-muted small">Step Initiative</span>
+                    </div>
+                </div>
+                <p class="text-muted small mb-4 lh-base text-end" style="max-width: 320px;">
+                    خطوة منصة تعليمية شبابية سودانية تُعنى بتمكين وتأهيل الشباب لسوق العمل من خلال التدريب، والتوجيه، وفرص التطوير المهني.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-3 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">روابط سريعة</h5>
+                <ul class="list-unstyled footer-links-list">
+                    <li><a href="#hero"><i class="bi bi-chevron-left small ms-1"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="bi bi-chevron-left small ms-1"></i> من نحن</a></li>
+                    <li><a href="#services"><i class="bi bi-chevron-left small ms-1"></i> البرامج التدريبية</a></li>
+                    <li><a href="#join-us"><i class="bi bi-chevron-left small ms-1"></i> انضم إلينا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">تواصل معنا</h5>
+                <p class="footer-text-muted small mb-3"><i class="bi bi-envelope-fill ms-2 text-white"></i> info@khotwa.com</p>
+                
+                <div class="d-flex gap-2 justify-content-start mt-2">
+                    <a href="https://www.facebook.com/profile.php?id=61551828546784&mibextid=ZbWKwL" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/step.initiative?igsh=dTh0eHMyYjl3MGZz" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaELgsh8F2pEd68m0x1R" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/httpstmeK_c3mjcSixjZmE0" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider my-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 small footer-text-muted">جميع الحقوق محفوظة © Step Initiative 2026</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentStep = 1;
+    const totalSteps = 3;
+
+    function changeStep(direction) {
+        // فحص صحة المدخلات الحالية قبل الانتقال للخطوة التالية
+        if (direction === 1) {
+            const currentStepEl = document.getElementById(`step${currentStep}`);
+            const inputs = currentStepEl.querySelectorAll('input[required], select[required], textarea[required]');
+            
+            for (let input of inputs) {
+                if (!input.checkValidity()) {
+                    input.reportValidity();
+                    return; // إيقاف الانتقال إذا كان هناك حقل فارغ ومطلوب
+                }
+            }
+        }
+
+        // إخفاء الخطوة الحالية
+        document.getElementById(`step${currentStep}`).classList.add('d-none');
+        
+        // تحديث الخطوة الجديدة
+        currentStep += direction;
+        
+        // إظهار الخطوة الجديدة
+        document.getElementById(`step${currentStep}`).classList.remove('d-none');
+
+        // تحديث أشرطة التقدم والمؤشرات البصرية
+        updateProgress();
+    }
+
+    function updateProgress() {
+        // تحديث شريط التقدم العلوي هندسياً
+        const progressPercentage = (currentStep / totalSteps) * 100;
+        document.getElementById('formProgress').style.width = `${progressPercentage}%`;
+
+        // تحديث ألوان مؤشرات الخطوات
+        for (let i = 1; i <= totalSteps; i++) {
+            const badge = document.getElementById(`stepBadge${i}`);
+            if (i <= currentStep) {
+                badge.style.color = '#144245';
+                badge.classList.add('fw-bold');
+            } else {
+                badge.style.color = '#6c757d';
+                badge.classList.remove('fw-bold');
+            }
+        }
+
+        // التحكم الذكي في ظهور الأزرار وفصلها لتجنب الالتصاق
+        if (currentStep === 1) {
+            document.getElementById('prevBtn').classList.add('d-none'); // إخفاء السابق
+            document.getElementById('nextBtn').classList.remove('d-none'); // إظهار التالي
+            document.getElementById('submitBtn').classList.add('d-none'); // إخفاء التقديم
+        } else if (currentStep === totalSteps) {
+            document.getElementById('prevBtn').classList.remove('d-none'); // إظهار السابق
+            document.getElementById('nextBtn').classList.add('d-none'); // إخفاء التالي
+            document.getElementById('submitBtn').classList.remove('d-none'); // إظهار التقديم
+        } else {
+            document.getElementById('prevBtn').classList.remove('d-none'); // إظهار السابق
+            document.getElementById('nextBtn').classList.remove('d-none'); // إظهار التالي
+            document.getElementById('submitBtn').classList.add('d-none'); // إخفاء التقديم
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+

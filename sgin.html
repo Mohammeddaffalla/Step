@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>الانضمام كمتدرب - مبادرة خطوة</title>
+</head>
+<body class="bg-light-setup d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top shadow-sm py-2 m-0" dir="rtl" style="margin-bottom: 0px;">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <a href="index.html" class="navbar-brand d-flex align-items-center m-0 order-1">
+    <img src="img/logo.png" alt="شعار خطوة" class="rounded-circle" style="width: 70px; height: 40px; object-fit: cover;">
+    
+    <div class="d-flex flex-column text-end ms-2 d-none d-sm-inline-flex">
+        <span class="fw-bold text-dark fs-5 lh-1 mb-1">خطوة</span>
+        <span class="text-muted small lh-1" style="font-size: 11px; font-family: sans-serif;">Step Initiative</span>
+    </div>
+</a>
+        <button class="navbar-toggler border-0 p-1 order-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars-staggered" style="color: #144245; font-size: 28px;"></i>
+</button>
+
+        <div class="collapse navbar-collapse text-center order-2" id="mainmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0 p-0 header-links">
+                <li class="nav-item"><a href="index.html" class="nav-link px-3">الرئيسية</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-3">من نحن</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-3">برامجنا</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        إنضم إلينا
+                    </a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sgin.html"><i class="bi bi-mortarboard-fill ms-2"></i>إنضم كمتدرب</a></li>
+                        <li><a class="dropdown-item" href="join.html"><i class="bi bi-heart-pulse-fill ms-2"></i>إنضم كمتطوع</a></li>
+                    </ul>
+            </ul>
+            
+            <div class="nav-buttons-container d-flex flex-column flex-md-row gap-2 justify-content-center pt-2 pt-md-0">
+                <a href="login.html" class="btn btn-main-action px-4 py-2 text-white">تسجيل دخول</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<section class="form-hero-banner text-center text-white d-flex align-items-center justify-content-center" dir="rtl">
+    <div class="container ">
+        <h1 class="fw-bold mb-2 fs-2"> التسجيل كمتدرب</h1>
+        <p class="text-white-50 fs-6 fw-light mb-0">ابدأ خُطوتك الأولى نحو تطوير مهاراتك اليوم</p>
+    </div>
+</section>
+
+<main class="flex-grow-1 d-flex align-items-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-5">
+                
+                <div class="form-card p-4 bg-white shadow-sm" dir="rtl">
+                    
+                    <div class="text-center mb-4">
+                        <div class="form-logo-icon mb-3 mx-auto d-flex align-items-center justify-content-center">
+                            <i class="bi bi-mortarboard-fill fs-4"></i>
+                        </div>
+                        <h2 class="fw-bold text-dark-green mb-1 fs-5">سجل كمتدرب</h2>
+                        <p class="text-muted small mb-0">يرجى ملء البيانات التالية للانضمام إلينا</p>
+                    </div>
+
+                    <form action="#" method="POST">
+                        
+                        <div class="row g-3 mb-3">
+                            <div class="col-8">
+                                <label for="fullName" class="form-label fw-bold text-dark small">الاسم الكامل <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control custom-input" id="fullName" name="fullName" placeholder="الاسم ثلاثي" required>
+                            </div>
+                            <div class="col-4">
+                                <label for="age" class="form-label fw-bold text-dark small">العمر <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control custom-input" id="age" name="age" min="15" max="60" placeholder="العمر" required>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-12 col-sm-6">
+                                <label for="whatsapp" class="form-label fw-bold text-dark small">رقم الواتساب <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control custom-input" id="whatsapp" name="whatsapp" placeholder="رمز الدولة +" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="email" class="form-label fw-bold text-dark small">البريد الإلكتروني (إختياري)<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control custom-input" id="email" name="email" placeholder="name@example.com">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="country" class="form-label fw-bold text-dark small">الدولة <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-input" id="country" name="country" placeholder="مكان إقامتك الحالي" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="interestField" class="form-label fw-bold text-dark small">المجال المهتم به <span class="text-danger">*</span></label>
+                            <select class="form-select custom-input" id="interestField" name="interestField" required>
+                                <option value="" selected disabled>اختر ...</option>
+                                <option value="marketing">تسويق رقمي</option>
+                                <option value="copywriting">كتابة محتوى</option>
+                                <option value="programming">برمجة</option>
+                                <option value="design">تصميم</option>
+                                <option value="self-development">تطوير ذات</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="whyJoin" class="form-label fw-bold text-dark small">لماذا تريد الانضمام (إختياري)<span class="text-danger">*</span></label>
+                            <textarea class="form-control custom-input" id="whyJoin" name="whyJoin" rows="3" placeholder="  شاركنا هدفك وحلمك  ..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit-form w-100 py-2.5 fw-bold rounded-pill fs-6">إرسال طلب الانضمام</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="main-footer pt-5 pb-3" dir="rtl">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            
+            <div class="col-12 col-md-4 text-end d-flex flex-column align-items-start">
+                <div class="d-flex align-items-center mb-3">
+                     <img src="img/log2.png" alt="خطوة" style="height: 50px;">
+                    <div class="text-white text-end ms-3">
+                        <h4 class="fw-bold m-0 fs-5">خطوة</h4>
+                        <span class="text-muted small">Step Initiative</span>
+                    </div>
+                </div>
+                <p class="text-muted small mb-4 lh-base text-end" style="max-width: 320px;">
+                    خطوة منصة تعليمية شبابية سودانية تُعنى بتمكين وتأهيل الشباب لسوق العمل من خلال التدريب، والتوجيه، وفرص التطوير المهني.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-3 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">روابط سريعة</h5>
+                <ul class="list-unstyled footer-links-list">
+                    <li><a href="#hero"><i class="bi bi-chevron-left small ms-1"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="bi bi-chevron-left small ms-1"></i> من نحن</a></li>
+                    <li><a href="#services"><i class="bi bi-chevron-left small ms-1"></i> البرامج التدريبية</a></li>
+                    <li><a href="#join-us"><i class="bi bi-chevron-left small ms-1"></i> انضم إلينا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 text-end">
+                <h5 class="fw-bold text-white mb-3 fs-6">تواصل معنا</h5>
+                <p class="footer-text-muted small mb-3"><i class="bi bi-envelope-fill ms-2 text-white"></i> info@khotwa.com</p>
+                
+                 <div class="d-flex gap-2 justify-content-start mt-2">
+                    <a href="https://www.facebook.com/profile.php?id=61551828546784&mibextid=ZbWKwL" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/step.initiative?igsh=dTh0eHMyYjl3MGZz" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaELgsh8F2pEd68m0x1R" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/httpstmeK_c3mjcSixjZmE0" class="footer-social-icon d-flex align-items-center justify-content-center"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider my-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 small footer-text-muted">جميع الحقوق محفوظة © Step Initiative 2026</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
