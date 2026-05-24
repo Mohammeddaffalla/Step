@@ -990,3 +990,30 @@ body {
     transform: translateY(-5px); 
     box-shadow: 0 6px 20px rgba(20, 66, 69, 0.4);
 }
+
+.replit-course-card:hover {
+    background-color: #0d2b2e !important; /* الخلفية تتحول للزيتي الداكن */
+    transform: translateY(-8px); /* يرتفع الكارد برفق لأعلى */
+    box-shadow: 0 20px 40px rgba(13, 43, 46, 0.25) !important; /* تأثير الظل الاحترافي */
+}
+
+/* تحويل العناوين، النصوص، البادج، والمصطلحات الإنجليزية للأبيض */
+.replit-course-card:hover h4,
+.replit-course-card:hover p,
+.replit-course-card:hover .text-muted,
+.replit-course-card:hover .badge-original {
+    color: #ffffff !important;
+}
+
+/* تحويل صندوق الأيقونة الدائري للأبيض والأيقونة للزيتي الداكن */
+.replit-course-card:hover .card-icon-main {
+    background-color: #ffffff !important;
+    color: #0d2b2e !important;
+}
+
+/* تحويل زر (سجل الآن) إلى الخلفية البيضاء الكاملة والنص بالزيتي الداكن */
+.replit-course-card:hover .btn-course-submit {
+    background-color: #ffffff !important;
+    color: #0d2b2e !important;
+    border-color: #ffffff !important;
+}
